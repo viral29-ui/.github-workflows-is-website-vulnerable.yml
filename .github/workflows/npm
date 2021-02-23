@@ -1,0 +1,3 @@
+registry=https://npm.pkg.github.com/viral29_ui
+@viral29_ui:registry=https://npm.pkg.github.com
+@viral29_ui:registry=https://npm.pkg.github.com
