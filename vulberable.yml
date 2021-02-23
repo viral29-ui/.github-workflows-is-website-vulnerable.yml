@@ -1,0 +1,16 @@
+git remote add origin https://github.com/viral29-ui/.github-workflows-is-website-vulnerable.yml.git
+git branch -M main
+git push -u origin main
+ Clone Repo:
+git clone https://github.com/lirantal/is-website-vulnerable.git
+
+# Change to repo's cloned directory:
+cd is-website-vulnerable
+
+# Build Image locally:
+docker build --no-cache -t lirantal/is-website-vulnerable:latest .
+
+# Run container:
+docker run --rm -e SCAN_URL="https://www.google.com/" lirantal/is-website-vulnerable:latest
+
+npx is-website-vulnerable https://example.com [--json] [--js-lib] [--mobile|--desktop] [--chromePath] [--cookie] [--token]
