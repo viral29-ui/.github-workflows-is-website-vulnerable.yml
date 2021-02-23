@@ -1,0 +1,11 @@
+# Clone Repo:
+git clone https://github.com/lirantal/is-website-vulnerable.git
+
+# Change to repo's cloned directory:
+cd is-website-vulnerable
+
+# Build Image locally:
+docker build --no-cache -t lirantal/is-website-vulnerable:latest .
+
+# Run container:
+docker run --rm -e SCAN_URL="https://www.google.com/" lirantal/is-website-vulnerable:latest
